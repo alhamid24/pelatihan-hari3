@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Junior Web Developer</title>
+    <!-- Menghubungkan file CSS eksternal -->
+    <link rel="stylesheet" href="style-cv.css">
+</head>
+<body>
+
+    <div class="portfolio-container">
+        
+        <!-- SIDEBAR KIRI (Profil & Tech Stack) -->
+        <aside class="sidebar card">
+            <div class="profile-img-container">
+                <!-- Ganti link gambar di bawah dengan foto profil Anda -->
+                <img src="poto.jpg" alt="Profile Photo">
+            </div>
+            
+            <div class="sidebar-content">
+                <div class="name-title">
+                    <h1>Ramadhan Al Hamid</h1>
+                    <p>&lt; Junior Web Developer /&gt;</p>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>// Tech Stack</h3>
+                    <div class="tech-badges">
+                        <span class="badge">React.js</span>
+                        <span class="badge">Node.js</span>
+                        <span class="badge">Laravel</span>
+                        <span class="badge">SQL</span>
+                        <span class="badge">PostgreSQL</span>
+                        <span class="badge">Git & Docker</span>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>// Contact</h3>
+                    <ul class="contact-list">
+                        <li><strong>Email:</strong> ramadhan.alhamid@example.com</li>
+                        <li><strong>GitHub:</strong> github.com/ramadhanalhamid</li>
+                        <li><strong>Location:</strong> Jakarta, ID</li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- KONTEN UTAMA KANAN -->
+        <main class="main-content">
+            
+            <!-- Bento Grid Atas: About & Quick Stats -->
+            <div class="grid-2-col">
+                <div class="card">
+                    <h3 class="section-title"><span>01.</span> // About Me</h3>
+                    <p class="section-desc">
+                        Seorang software engineer yang berfokus pada pengembangan aplikasi web yang efisien, skalabel, dan memiliki performa tinggi. Menyukai tantangan dalam merancang arsitektur backend maupun antarmuka pengguna yang interaktif.
+                    </p>
+                </div>
+
+                <div class="card stats-card">
+                    <div class="stat-item">
+                        <h2>4+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h2>30+</h2>
+                        <p>Projects Done</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="card">
+                <h3 class="section-title"><span>02.</span> // Work Experience</h3>
+                
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h4>Senior Full Stack Developer</h4>
+                        <span class="date">2023 - Present</span>
+                    </div>
+                    <span class="company">PT. Code Nova Indonesia</span>
+                    <p>Mengembangkan dan memelihara RESTful API berskala besar menggunakan Node.js serta mengoptimalkan kueri basis data PostgreSQL.</p>
+                </div>
+
+                <div class="exp-item">
+                    <div class="exp-header">
+                        <h4>Junior Web Developer</h4>
+                        <span class="date">2021 - 2023</span>
+                    </div>
+                    <span class="company">Digital Solusi Kreasi</span>
+                    <p>Membangun antarmuka web responsif menggunakan React.js, Tailwind CSS, dan melakukan integrasi dengan berbagai layanan pihak ketiga.</p>
+                </div>
+            </div>
+
+            <!-- Contact Form Section -->
+            <div class="card">
+                <h3 class="section-title"><span>03.</span> // Send a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label>Your Name</label>
+                        <input type="text" class="form-control" placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Email</label>
+                        <input type="email" class="form-control" placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Your Message</label>
+                        <textarea class="form-control" rows="4" placeholder="Write your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Execute Send() 🚀</button>
+                </form>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+</html>

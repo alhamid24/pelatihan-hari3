@@ -1,0 +1,257 @@
+/* Tema Warna Dark Mode Ala Terminal & Editor Kode */
+:root {
+    --bg-main: #0b0f19;
+    --card-bg: #111827;
+    --border-color: #1f2937;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --accent-blue: #38bdf8;
+    --accent-green: #4ade80;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Code', 'Courier New', Courier, monospace; /* Font khas coding */
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-container {
+    width: 100%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    gap: 30px;
+}
+
+/* Card Umum */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* --- SIDEBAR KIRI --- */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: fit-content;
+}
+
+.profile-img-container {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+.profile-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(20%) contrast(110%);
+}
+
+.sidebar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.name-title h1 {
+    font-size: 1.3rem;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.name-title p {
+    font-size: 0.8rem;
+    color: var(--accent-green);
+}
+
+.sidebar-section h3 {
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Tech Badges */
+.tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.badge {
+    background-color: #1f2937;
+    border: 1px solid var(--border-color);
+    color: var(--accent-blue);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+}
+
+.contact-list {
+    list-style: none;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contact-list strong {
+    color: var(--text-main);
+}
+
+/* --- KONTEN UTAMA KANAN --- */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 20px;
+}
+
+.section-title {
+    font-size: 1rem;
+    color: var(--accent-blue);
+    margin-bottom: 12px;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 6px;
+}
+
+.section-title span {
+    color: var(--accent-green);
+}
+
+.section-desc {
+    font-size: 0.85rem;
+    line-height: 1.6;
+    color: var(--text-muted);
+}
+
+/* Stats Card */
+.stats-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    text-align: center;
+}
+
+.stat-item h2 {
+    font-size: 1.8rem;
+    color: var(--accent-green);
+}
+
+.stat-item p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+/* Experience Item */
+.exp-item {
+    margin-bottom: 20px;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.exp-item h4 {
+    font-size: 0.95rem;
+    color: var(--text-main);
+}
+
+.date {
+    font-size: 0.75rem;
+    color: var(--accent-green);
+}
+
+.company {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--accent-blue);
+    margin-bottom: 5px;
+}
+
+.exp-item p {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Form Kontak */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    font-size: 0.85rem;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--accent-blue);
+    color: #0b0f19;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+    opacity: 0.9;
+}
+
+/* Responsif untuk Layar Kecil / HP */
+@media (max-width: 900px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+    .grid-2-col {
+        grid-template-columns: 1fr;
+    }
+}
